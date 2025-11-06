@@ -1,0 +1,51 @@
+html {
+  scroll-behavior: smooth;
+}
+body {
+  background-color: rgb(168, 169, 247);
+  font-family: Poppins;
+}
+
+.my-bullet {
+  display: inline-block;
+  background: #fff;
+  width: 12px;
+  height: 12px;
+  margin: 0 4px;
+  border-radius: 50%;
+  opacity: 0.7;
+  z-index: 10; /* make sure it’s above image */
+}
+
+.my-bullet-active {
+  background: #ff5722;
+  opacity: 1;
+  transform: scale(1.3);
+}
+
+.swiper-pagination {
+  bottom: 10px !important; /* distance from bottom */
+  text-align: center;
+  z-index: 0;
+}
+
+.custome-font {
+  font-family: Poppins;
+}
+
+.hero-back {
+  position: absolute; /* Keeps it over the background */
+  bottom: 40px;
+  left: 0;
+  right: 0;
+  padding: 15px 25px;
+
+  backdrop-filter: blur(4px); /* Slightly stronger blur for depth */
+/* background-color: rgba(255, 87, 34, 0.4); */
+  /* Softer, cleaner transparency */
+
+  border-radius: 12px; /* Adds a smooth shape */
+  text-align: center; /* Centers text neatly */
+  color: white; /* Ensures readability */
+  font-family: "Poppins", sans-serif;
+}
