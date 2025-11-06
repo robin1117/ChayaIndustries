@@ -35,7 +35,12 @@ const Swipers = () => {
           <img
             src="./image1.png"
             alt="slide1"
-            style={{ width: "100%", height: "100%", objectFit: "cover" }}
+            style={{
+              width: "100%",
+              height: "100%",
+              objectFit: "cover",
+              objectPosition: "left",
+            }}
           />
         </SwiperSlide>
 
@@ -43,7 +48,24 @@ const Swipers = () => {
           <img
             src="image2.png"
             alt="slide2"
-            style={{ width: "100%", height: "100%", objectFit: "cover" }}
+            style={{
+              width: "100%",
+              height: "100%",
+              objectFit: "cover",
+              objectPosition: "bottom",
+            }}
+          />
+        </SwiperSlide>
+        <SwiperSlide>
+          <img
+            src="image3.png"
+            alt="slide2"
+            style={{
+              width: "100%",
+              height: "100%",
+              objectFit: "cover",
+              objectPosition: "bottom",
+            }}
           />
         </SwiperSlide>
       </Swiper>
