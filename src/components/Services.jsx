@@ -19,7 +19,7 @@ const services = [
   },
   {
     title: "Transportation",
-    desc: "Providing reliable support and regular maintenance for smooth operations.",
+    desc: "Reliable & Timely Transportation Support for Bulk Orders across All India.",
     icon: <FaTruck size={40} />,
     bg: "https://images.unsplash.com/photo-1581092334707-9c27b1b1e7a6?auto=format&fit=crop&w=800&q=60", // maintenance
   },

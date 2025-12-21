@@ -7,25 +7,31 @@ const Navbar = () => {
   const [active, setActive] = useState("Home");
   const [isDrawerOpen, setIsDrawerOpen] = useState(false);
 
-  const navLinks = ["Home", "contact"];
+  const navLinks = ["Home", "About", "contact"];
 
   return (
     <div className="sticky top-0 w-full bg-[#001F3F] shadow-md z-50">
       <nav className="md:max-w-[1020px] m-auto flex justify-between items-center px-4 py-3 relative">
-        {/* Logo */}
-        <h1 className="text-[1.2rem] font-bold  sm:text-3xl uppercase italic text-white">
-          Chaya Industries
-        </h1>
+        {/* Logo + GSTIN */}
+        <div className="flex flex-col">
+          <h1 className="text-[1.2rem] font-bold sm:text-3xl uppercase italic text-white">
+            Chaya Industries
+          </h1>
+          <p className="text-[0.75rem] sm:text-sm text-gray-300 tracking-wide mt-[-2px]">
+            GSTIN:{" "}
+            <span className="text-amber-300 font-medium">06CESPS7817H1ZS</span>
+          </p>
+        </div>
 
         {/* Desktop Links */}
         <ul className="hidden sm:flex gap-7 text-[1.2rem] font-medium">
           {navLinks.map((link) => (
             <Link
               key={link}
-              to={link.toLowerCase()} // 👈 match section ID
+              to={link.toLowerCase()}
               smooth={true}
               duration={500}
-              offset={-80} // optional: adjust scroll position (for fixed navbar)
+              offset={-80}
               className={`text-white cursor-pointer capitalize ${
                 active === link ? "border-b-2 border-white" : ""
               }`}
@@ -65,7 +71,7 @@ const Navbar = () => {
                   }`}
                   onClick={() => {
                     setActive(link);
-                    setIsDrawerOpen(false); // ✅ close drawer after click
+                    setIsDrawerOpen(false);
                   }}
                 >
                   {link}
@@ -74,6 +80,7 @@ const Navbar = () => {
             </motion.ul>
           )}
         </AnimatePresence>
+        
       </nav>
     </div>
   );
