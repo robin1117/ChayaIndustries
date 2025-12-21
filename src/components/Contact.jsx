@@ -24,7 +24,7 @@ const Contact = () => {
         <div className="bg-white rounded-2xl shadow-lg p-6 flex flex-col gap-6 text-gray-800">
           {/* WhatsApp Contact */}
           <motion.a
-            href="https://wa.me/919467715978"
+            href="https://wa.me/917015526876"
             target="_blank"
             rel="noopener noreferrer"
             whileHover={{ scale: 1.05 }}
@@ -39,7 +39,7 @@ const Contact = () => {
 
           {/* Email Contact */}
           <motion.a
-            href="mailto:robinsinghofficial2504@gmail.com"
+            href="mailto:Sonuindustry123@gmail.com"
             whileHover={{ scale: 1.05 }}
             className="flex items-center gap-4 border border-blue-400 rounded-xl p-4 hover:bg-blue-100 transition"
           >
