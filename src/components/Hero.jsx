@@ -49,10 +49,7 @@ const Hero = () => {
         </motion.div>
 
         {/* Button */}
-        <motion.div
-          whileHover={{ scale: 1.05 }}
-          className="mt-8 text-blue-600"
-        >
+        <motion.div whileHover={{ scale: 1.05 }} className="mt-8 text-blue-600">
           <Button
             variant="contained"
             sx={{
@@ -80,6 +77,7 @@ const Hero = () => {
               smooth={true}
               duration={500}
               offset={-80}
+              className="mainTxt"
             >
               Get In Touch
             </Link>

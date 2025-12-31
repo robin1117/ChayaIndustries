@@ -49,3 +49,7 @@ body {
   color: white; /* Ensures readability */
   font-family: "Poppins", sans-serif;
 }
+
+.mainTxt{
+  font-family: cursive;
+}

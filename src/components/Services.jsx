@@ -35,7 +35,7 @@ const Services = () => {
         initial={{ opacity: 0, y: -30 }}
         whileInView={{ opacity: 1, y: 0 }}
         transition={{ duration: 0.7 }}
-        className="text-5xl font-extrabold mb-12 drop-shadow-lg"
+        className="text-4xl font-extrabold mb-12 drop-shadow-lg"
       >
         Our Services
       </motion.h2>
