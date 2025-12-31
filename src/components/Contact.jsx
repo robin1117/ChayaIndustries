@@ -62,7 +62,7 @@ const Contact = () => {
 
         {/* Address */}
         <motion.div
-          initial={{ opacity: 0, x: 50 }}
+          initial={{ opacity: 1, x: -40 }}
           whileInView={{ opacity: 1, x: 0 }}
           transition={{ duration: 0.7 }}
           className="bg-white rounded-2xl shadow-xl p-6 text-gray-800"
